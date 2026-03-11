@@ -7,7 +7,7 @@ export default async function handler(req, res) {
     const token = authHeader.replace("Bearer ", "");
 
     // Pastikan hanya admin yang bisa akses
-    const ADMIN_KEY = process.env.ADMIN_KEY || "rahasiabanget";
+    const ADMIN_KEY = process.env.Heaven_Xyou || "Heaven_Xyou";
     if (token !== ADMIN_KEY) {
       return res.status(401).json({ error: "Unauthorized" });
     }
