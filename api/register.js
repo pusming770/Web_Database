@@ -1,6 +1,6 @@
 import bcrypt from 'bcryptjs'
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN
+const GITHUB_TOKEN = process.env.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
 const GITHUB_REPO = process.env.Web_Database  // contoh: "username/reponame"
 const GITHUB_PATH = process.env.user_json || 'users.json'
 
