@@ -1,8 +1,8 @@
 import bcrypt from 'bcryptjs'
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN
-const GITHUB_REPO = process.env.GITHUB_REPO  // contoh: "username/reponame"
-const GITHUB_PATH = process.env.GITHUB_PATH || 'users.json'
+const GITHUB_REPO = process.env.Web_Database  // contoh: "username/reponame"
+const GITHUB_PATH = process.env.user_json || 'users.json'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST')
